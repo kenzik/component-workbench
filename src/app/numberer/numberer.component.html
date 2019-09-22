@@ -1,0 +1,17 @@
+  <div  class="number_scroller" [ngClass]="{'disabled': disabled}">
+    <div
+      class="number_scroller__label left"
+      [ngClass]="{'disabled': disabled}"
+      (click)="decrease()">{{ labelLeft }}</div>
+    <input #val
+      type="number"
+      class="number_scroller__value"
+      [disabled]="disabled"
+      [value]="_value"
+      (input)="changed(val.value)"
+      (blur)="changed(val.value)" />
+    <div
+      class="number_scroller__label right"
+      [ngClass]="{'disabled': disabled}"
+      (click)="increase()">{{ labelRight }}</div>
+  </div>

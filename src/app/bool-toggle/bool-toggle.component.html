@@ -1,0 +1,16 @@
+<div class="bool_toogle">
+
+  <div class="bool_toggle__controls">
+    <button
+      (click)="setTrue()"
+      [ngClass]="{'selected': _value }"
+      class="bool_toggle__controls__button true"
+      type="button">{{ labelTrue }}</button>
+
+    <button
+      (click)="setFalse()"
+      [ngClass]="{'selected': !_value }"
+      class="bool_toggle__controls__button false"
+      type="button">{{ labelFalse }}</button>
+  </div>
+</div>
