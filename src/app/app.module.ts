@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NumbererComponent } from './numberer/numberer.component';
 import { BoolToggleComponent } from './bool-toggle/bool-toggle.component';
+import { InputCommentComponent } from './input-comment/input-comment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NumbererComponent,
-    BoolToggleComponent
+    BoolToggleComponent,
+    InputCommentComponent
   ],
   imports: [
     BrowserModule,

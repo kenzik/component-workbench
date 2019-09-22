@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     this.testForm = new FormGroup({
       count: new FormControl({ value: 7, disabled: false }, [Validators.required]),
       bool: new FormControl({ value: true, disabled: false }, [Validators.required]),
-
+      comment: new FormControl({ value: '', disabled: false}, [Validators.required])
     });
   }
 

@@ -1,0 +1,9 @@
+<div class="input_comment">
+  <input #val
+    type="text"
+    [value]="_value"
+    placeholder="{{placeHolder}}"
+    [disabled]="disabled"
+    (input)="changed(val.value)"
+    (blur)="changed(val.value)" />
+</div>

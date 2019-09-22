@@ -1,12 +1,13 @@
 <form [formGroup]="testForm">
 
-  <h4>Value: {{ testForm.get('bool').value }}</h4>
-  <h4>Touched: {{ testForm.get('bool').touched }}</h4>
-  <h4>Dirty: {{ testForm.get('bool').dirty }}</h4>
-  <h4>Error: {{ testForm.get('bool').hasError('required') }}</h4>
+  <h4>Value: {{ testForm.get('comment').value }}</h4>
+  <h4>Touched: {{ testForm.get('comment').touched }}</h4>
+  <h4>Dirty: {{ testForm.get('comment').dirty }}</h4>
+  <h4>Error: {{ testForm.get('comment').hasError('required') }}</h4>
 
   <app-numberer formControlName="count"></app-numberer>
   <app-bool-toggle formControlName="bool"></app-bool-toggle>
+  <app-input-comment formControlName="comment" placeHolder="This is the placeholder"></app-input-comment>
 </form>
 
 <hr />

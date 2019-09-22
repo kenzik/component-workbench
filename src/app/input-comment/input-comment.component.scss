@@ -1,0 +1,13 @@
+:host {
+  input {
+    border: 0;
+    width: 200px;
+    background-color: inherit;
+    padding: 4px;
+    border-bottom: 1px solid lightgray;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
