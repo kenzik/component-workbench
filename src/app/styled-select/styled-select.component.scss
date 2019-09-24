@@ -1,0 +1,30 @@
+:host {
+
+
+  .styled_select {
+      flex-direction: row;
+      box-sizing: border-box;
+      display: flex;
+      place-content: center;
+      align-items: center;
+
+      &__label {
+        width: 46px;
+        height: 22px;
+        line-height: 1;
+        font-size: 9px;
+        color: black;
+        text-transform: uppercase;
+      }
+      select {
+        height: 22px;
+      }
+      // select:required:invalid {
+      //   color: #666;
+      // }
+      // option[value=""][disabled] {
+      //   display: none;
+      // }
+  }
+}
+

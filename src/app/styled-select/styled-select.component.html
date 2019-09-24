@@ -1,0 +1,10 @@
+<div
+  class="styled_select"
+  [style.width.px]="width"
+  >
+  <button class="styled_select__label" disabled>{{ label }}</button>
+  <select class="styled_select__select" [(ngModel)]="selected" (change)="changed($event)">
+    <!-- <option value="" *ngIf="placeHolder" disabled selected>{{ placeHolder }}</option> -->
+    <option class="styled_select__select__option" *ngFor="let item of data" [value]="selectField ? item[selectField] : item">{{ displayField ? item[displayField] : item }}</option>
+  </select>
+</div>

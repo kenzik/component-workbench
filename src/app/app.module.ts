@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NumbererComponent } from './numberer/numberer.component';
 import { BoolToggleComponent } from './bool-toggle/bool-toggle.component';
 import { InputCommentComponent } from './input-comment/input-comment.component';
+import { StyledSelectModule } from './styled-select/styled-select.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InputCommentComponent } from './input-comment/input-comment.component';
     AppRoutingModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    StyledSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
